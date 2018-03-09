@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Jorge González</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-with, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minium-scale=1.0">
+
+		<!-- Declaracion de Archivos CSS Cascade Style Sheet-->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+</head>
+<body>
+	<header>
+		<h1 class="title">
+			<figure>
+				<a href="index.html">
+					<img src="img/name.png" alt="">
+				</a>
+			</figure>
+			<span>Daniel González</span>
+		</h1>
+		<nav>
+			<ul>
+				<li onclick="exports.goTo(document.body,'aboutme',500)"><a id="" href="#">Sobre mi</a></li>
+				<li onclick="exports.goTo(document.body,'portfolio',500)"><a href="">Portafolio</a></li>
+				<li onclick="exports.goTo(document.body,'contact',500)"><a href="#">Contacto</a></li>
+			</ul>
+			</nav>
+			</header>
+			<section class="welcome" id="aboutme">
+			<hgroup>
+				<h3>
+					<strong>Hola, soy Daniel</strong>
+				</h3>
+			</hgroup>	
+			<p>
+				Tengo 18 años, soy estudiante, reciente mente estoy estudiando cursos en linea sobre Frontend, Desarrollo Web y Web Backend (aunque me gusta mas el Backend), soy estudiante de primer año de Ingenieria en Sistemas en la Universidad Mariano Galvez.
+			<p>
+				Me gusta crear cosas, actualmente no trabajo pero me dedico a estudiar en linea lo que es <strong>Backend</strong>.
+			</p>
+	</section>
+	<section class="skills color2" >
+		<ul >
+			<li class="wow slideInLeft categories" data-wow-duration="1s">
+				Frontend
+				<ul>
+					<li>
+						<div class="barra-90"></div>
+						<span>HTML5 + CSS3</span>
+					</li>
+					<li>
+						<div class="barra-80"></div>
+						<span>Stylus</span>
+					</li>
+					<li>
+						<div class="barra-80"></div>
+						<span>JavaScript</span>
+					</li>
+ 				</ul>
+ 			</li>			<li class="wow bounceInDown categories" data-wow-duration="1s">
+				Backend &amp; Desktop
+				<ul>
+					<li>
+						<div class="barra-70"></div>
+						<span>MySQL</span>
+					</li>
+					<li>
+						<div class="barra-79"></div>
+						<span>Node.js + Express</span>
+					</li>
+					<li>
+						<div class="barra-58"></div>
+						<span>Node.js + Sails.js</span>
+					</li>
+					<li>
+						<div class="barra-40"></div>
+						<span>C# + C++</span>
+					</li>
+					<li>
+						<div class="barra-80"></div>
+						<span>JavaScript</span>
+					</li>
+				</ul>
+			</li>
+			<li class="wow slideInRight categories" data-wow-duration="1s">
+				Algo más...
+				<ul>
+					<li>
+						<div class="barra-84"></div>
+						<span>HTML+CSS+JS</span>
+					</li>
+					<li>
+						<div class="barra-75"></div>
+						<span>MongoDB</span>
+					</li>
+					<li>
+						<div class="barra-69"></div>
+						<span>Ajax</span>
+					</li>
+					<li>
+						<div class="barra-80"></div>
+						<span>MySQL</span>
+					</li>
+					<li>
+						<div class="barra-45"></div>
+						<span>Java</span>
+					</li>
+				</ul>
+			</li>
+			<li style="display:none;" class="wow" >
+			</li>
+		</ul>
+	</section>
+<section class="phrase">
+		<p class="wow fadeInDown text-big text-center">
+			"El secreto del Éxito es percistencia por la meta."
+		</p>
+	</section>
+	<section class="jobs color2" id="portafolio">
+		<p class="text-medium text-center"></p>
+		<ul>
+			<li class="phrase text-big text-center">
+				<p class="phrase">Cambia tus pensamientos y Cambiaras tu mundo</p>
+			</li>
+		</ul>
+	</section>
+	<section class="contact text-center" id="contact">
+		<p class="text-medium wow slideInLeft">
+			Contáctame
+		</p>
+		<article class="data wow slideInLeft">
+			<form href="includes/message.php" action="index.html" method="POST">
+				<input type="text" class="field" name="name" placeholder="Tu Nombre" >
+				<input type="text" class="field" name="email" placeholder="Tu Email">
+				<input type="text" class="field" name="asunto" placeholder="Asunto">
+				<textarea name="message" id="" cols="30" rows="3" placeholder="Tu Mensaje"></textarea>
+				<button onclick='alert("Su mensaje se a Enviado.")'>Enviar Mensaje</button>
+			</form>
+		</article>
+	</section>
+	<footer class="text-center">
+		<p class="icons text-center">
+			<a href="https://github.com/Jorge1999" target="_blank">
+				<i class="fa fa-github"></i>
+			</a>
+			<a href="https://www.twitter.com" target="_blank">
+				<i class="fa fa-twitter"></i>
+			</a>
+			<a href="https://www.facebook.com/jorgedaniel.gonzalezestrada.5" target="_blank">
+				<i class="fa fa-facebook"></i>
+			</a>
+		</p>
+		<p>Desarrollado por: Daniel González</p>
+	</footer>
+<script src="js/wow.min.js"></script>
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+		(new WOW(
+					{
+						boxClass:     'wow',      // animated element css class (default is wow)
+							animateClass: 'animated', // animation css class (default is animated)
+							offset:       0,          // distance to the element when triggering the animation (default is 0)
+							mobile:       true,       // trigger animations on mobile devices (default is true)
+							live:         true        // act on asynchronously loaded content (default is true)
+						}
+		)).init();
+	</script>
+</body>
+</html>
+			
